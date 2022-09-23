@@ -1,9 +1,9 @@
+import time
 from lib2to3.pgen2 import driver
 
 from selenium.webdriver.common.by import By
 
 from Tests_2.LandingPage import LandingPage
-
 from Tests_2.conftest import driver
 
 
@@ -21,11 +21,13 @@ class SigninPage:
         return self.driver.find_element(*SigninPage.cookies).click()
 
     def loginEmail(self):
-        return self.driver.find_element(*SigninPage.email).send_keys("dinesh@codeops.tech")
+        return self.driver.find_element(*SigninPage.email).send_keys("amarnadhmurapaka1997@gmail.com")
 
     def loginPassword(self):
-        return self.driver.find_element(*SigninPage.password).send_keys("Demondemo@1")
+        return self.driver.find_element(*SigninPage.password).send_keys("Amar@7036")
 
-    def loginButton(self):
-        self.driver.find_element(*SigninPage.signin).click()
-        return LandingPage
+    def signin_Button(self):
+         return self.driver.find_element(*SigninPage.signin).click()
+
+
+
