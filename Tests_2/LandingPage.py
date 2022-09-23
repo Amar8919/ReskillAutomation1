@@ -11,10 +11,11 @@ class LandingPage:
 
     def __init__(self, driver):
         self.driver = driver
-
     my_profile = (By.ID, "profile/me")
 
     def my_profilepage(self):
         return self.driver.find_element(*LandingPage.my_profile).click()
+
+
 
 
