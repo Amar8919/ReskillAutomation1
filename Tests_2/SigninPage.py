@@ -27,7 +27,11 @@ class SigninPage:
         return self.driver.find_element(*SigninPage.password).send_keys("Amar@7036")
 
     def signin_Button(self):
-         return self.driver.find_element(*SigninPage.signin).click()
+        self.driver.find_element(*SigninPage.signin).click()
+        landingpage = LandingPage(self.driver)
+        landingpage.my_profile()
+        return landingpage
+
 
 
 

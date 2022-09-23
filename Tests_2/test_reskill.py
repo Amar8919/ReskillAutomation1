@@ -29,6 +29,8 @@ class TestReskill(BaseClass):
         log.info("Entering Password")
         signinpage.signin_Button()
         log.info("signin_buttton")
+        landinpage = LandingPage(self.driver)
+        landinpage.my_profile()
 
 
 
