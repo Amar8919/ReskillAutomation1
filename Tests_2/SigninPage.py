@@ -29,7 +29,6 @@ class SigninPage:
     def signin_Button(self):
         self.driver.find_element(*SigninPage.signin).click()
         landingpage = LandingPage(self.driver)
-        landingpage.my_profile()
         return landingpage
 
 
